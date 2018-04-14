@@ -58,6 +58,11 @@ $ roslaunch odom_to_trajectory create_trajectory.launch
 
 * Original package was cloned from https://github.com/turtlebot/turtlebot into **src** folder
 
+* Install Dependencies:
+```bash
+$ rosdep -i install turtlebot_teleop
+```
+
 * launch file:
 ```bash
 $ roslaunch turtlebot_teleop keyboard_teleop.launch
