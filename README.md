@@ -105,3 +105,21 @@ then a launch file is added.
 $ roslaunch main main.launch
 ```
 
+### Instructions for Installing and Running the rqt_multiplot ROS plugin:
+
+* installation:
+
+```bash
+$ sudo apt-get install ros-kinetic-rqt
+$ sudo apt-get install ros-kinetic-rqt-multiplot
+$ sudo apt-get install libqwt-dev
+$ rm ~/.config/ros.org/rqt_gui.ini
+```
+
+* runnning:
+
+```bash
+$ rosrun rqt_multiplot rqt_multiplot
+```
+
+
