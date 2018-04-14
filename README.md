@@ -67,3 +67,28 @@ $ rosdep -i install turtlebot_teleop
 ```bash
 $ roslaunch turtlebot_teleop keyboard_teleop.launch
 ```
+
+* to visualize the topics:
+
+```bash
+$ rosrun rqt_graph rqt_graph
+```
+
+### RViz Package
+
+* saved config file to src/EKFLab.rviz
+* added launch file:
+
+```xml
+<launch>
+  <!--RVIZ-->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d  /home/mkhuthir/catkin_ws/src/EKFLab.rviz"/>
+</launch>
+```
+* launch file:
+```bash
+$ cd ~/catkin_ws/src/
+$ roslaunch RvizLaunch.launch
+```
+
+###
