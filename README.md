@@ -91,4 +91,17 @@ $ cd ~/catkin_ws/src/
 $ roslaunch RvizLaunch.launch
 ```
 
-###
+### Main Package
+
+* Packange is created using:
+```bash
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg main
+```
+then a launch file is added.
+
+* launch file:
+```bash
+$ roslaunch main main.launch
+```
+
