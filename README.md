@@ -2,24 +2,24 @@
 ROS Turtlebot with Extended Kalman Filters
 
 
-### Turtlebot package:
+### Turtlebot Simulator Package:
 
-Original package was cloned from https://github.com/turtlebot/turtlebot_simulator
+* Original package was cloned from https://github.com/turtlebot/turtlebot_simulator into **src** folder
 
-Install Dependencies:
+* Install Dependencies:
 ```bash
 $ rosdep -i install turtlebot_gazebo
 ```
-launch file:
+* launch file:
 ```bash
 $ roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
 
-### EKF package:
+### Robbot Pose EKF Package:
 
-Original package was cloned from https://github.com/udacity/robot_pose_ekf
+* Original package was cloned from https://github.com/udacity/robot_pose_ekf into **src** folder
 
-Modified launch file to be as following:
+* Modified launch file to be as following:
 
 ```xml
 <launch>
@@ -40,9 +40,25 @@ Modified launch file to be as following:
 </launch>
 ```
 
-launch file:
+* launch file:
 ```bash
 $ roslaunch robot_pose_ekf robot_pose_ekf.launch
 ```
 
-### 
+### Odometry to Trajectory Package:
+
+* Original package was cloned from https://github.com/udacity/odom_to_trajectory into **src** folder
+
+* launch file:
+```bash
+$ roslaunch odom_to_trajectory create_trajectory.launch
+```
+
+### TurtleBot Teleop Package:
+
+* Original package was cloned from https://github.com/turtlebot/turtlebot into **src** folder
+
+* launch file:
+```bash
+$ roslaunch turtlebot_teleop keyboard_teleop.launch
+```
